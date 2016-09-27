@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CataloghiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Cataloghi">
+          <Key>
+            <PropertyRef Name="IdCatalogo" />
+          </Key>
+          <Property Name="IdCatalogo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PrefissoNome" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="SuffissoNome" Type="int" Nullable="false" />
+          <Property Name="Anno" Type="char" MaxLength="4" Nullable="false" />
+          <Property Name="Versione" Type="varchar" MaxLength="255" />
+          <Property Name="IdEstensione" Type="int" Nullable="false" />
+          <Property Name="IdCostruttore" Type="int" Nullable="false" />
+          <Property Name="Pdf" Type="varchar" MaxLength="255" />
+          <Property Name="IdUtenteProprietario" Type="int" />
+          <Property Name="DataChiusura" Type="datetime" />
+          <Property Name="IdUtenteChiusura" Type="int" />
+          <Property Name="DataInserimento" Type="datetime" Nullable="false" />
+          <Property Name="IdUtenteInserimento" Type="int" Nullable="false" />
+          <Property Name="Note" Type="varchar" MaxLength="255" />
+          <Property Name="IdPeriodoFatturazione" Type="int" />
+          <Property Name="Eliminato" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="CataloghiModelStoreContainer">
+          <EntitySet Name="Cataloghi" EntityType="Self.Cataloghi" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CataloghiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Cataloghi">
+          <Key>
+            <PropertyRef Name="IdCatalogo" />
+          </Key>
+          <Property Name="IdCatalogo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PrefissoNome" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="SuffissoNome" Type="Int32" Nullable="false" />
+          <Property Name="Anno" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Versione" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="IdEstensione" Type="Int32" Nullable="false" />
+          <Property Name="IdCostruttore" Type="Int32" Nullable="false" />
+          <Property Name="Pdf" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="IdUtenteProprietario" Type="Int32" />
+          <Property Name="DataChiusura" Type="DateTime" Precision="3" />
+          <Property Name="IdUtenteChiusura" Type="Int32" />
+          <Property Name="DataInserimento" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IdUtenteInserimento" Type="Int32" Nullable="false" />
+          <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="IdPeriodoFatturazione" Type="Int32" />
+          <Property Name="Eliminato" Type="Byte" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="CataloghiEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Cataloghis" EntityType="Self.Cataloghi" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CataloghiModelStoreContainer" CdmEntityContainer="CataloghiEntities">
+          <EntitySetMapping Name="Cataloghis">
+            <EntityTypeMapping TypeName="CataloghiModel.Cataloghi">
+              <MappingFragment StoreEntitySet="Cataloghi">
+                <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+                <ScalarProperty Name="PrefissoNome" ColumnName="PrefissoNome" />
+                <ScalarProperty Name="SuffissoNome" ColumnName="SuffissoNome" />
+                <ScalarProperty Name="Anno" ColumnName="Anno" />
+                <ScalarProperty Name="Versione" ColumnName="Versione" />
+                <ScalarProperty Name="IdEstensione" ColumnName="IdEstensione" />
+                <ScalarProperty Name="IdCostruttore" ColumnName="IdCostruttore" />
+                <ScalarProperty Name="Pdf" ColumnName="Pdf" />
+                <ScalarProperty Name="IdUtenteProprietario" ColumnName="IdUtenteProprietario" />
+                <ScalarProperty Name="DataChiusura" ColumnName="DataChiusura" />
+                <ScalarProperty Name="IdUtenteChiusura" ColumnName="IdUtenteChiusura" />
+                <ScalarProperty Name="DataInserimento" ColumnName="DataInserimento" />
+                <ScalarProperty Name="IdUtenteInserimento" ColumnName="IdUtenteInserimento" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="IdPeriodoFatturazione" ColumnName="IdPeriodoFatturazione" />
+                <ScalarProperty Name="Eliminato" ColumnName="Eliminato" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Nessuno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

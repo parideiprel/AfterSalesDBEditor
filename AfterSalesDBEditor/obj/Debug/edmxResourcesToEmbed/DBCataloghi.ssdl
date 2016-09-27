@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CataloghiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Cataloghi">
+    <Key>
+      <PropertyRef Name="IdCatalogo" />
+    </Key>
+    <Property Name="IdCatalogo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PrefissoNome" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="SuffissoNome" Type="int" Nullable="false" />
+    <Property Name="Anno" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="Versione" Type="varchar" MaxLength="255" />
+    <Property Name="IdEstensione" Type="int" Nullable="false" />
+    <Property Name="IdCostruttore" Type="int" Nullable="false" />
+    <Property Name="Pdf" Type="varchar" MaxLength="255" />
+    <Property Name="IdUtenteProprietario" Type="int" />
+    <Property Name="DataChiusura" Type="datetime" />
+    <Property Name="IdUtenteChiusura" Type="int" />
+    <Property Name="DataInserimento" Type="datetime" Nullable="false" />
+    <Property Name="IdUtenteInserimento" Type="int" Nullable="false" />
+    <Property Name="Note" Type="varchar" MaxLength="255" />
+    <Property Name="IdPeriodoFatturazione" Type="int" />
+    <Property Name="Eliminato" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="CataloghiModelStoreContainer">
+    <EntitySet Name="Cataloghi" EntityType="Self.Cataloghi" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

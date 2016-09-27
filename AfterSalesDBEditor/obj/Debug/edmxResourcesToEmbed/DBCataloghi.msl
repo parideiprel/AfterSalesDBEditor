@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CataloghiModelStoreContainer" CdmEntityContainer="CataloghiEntities">
+    <EntitySetMapping Name="Cataloghis">
+      <EntityTypeMapping TypeName="CataloghiModel.Cataloghi">
+        <MappingFragment StoreEntitySet="Cataloghi">
+          <ScalarProperty Name="IdCatalogo" ColumnName="IdCatalogo" />
+          <ScalarProperty Name="PrefissoNome" ColumnName="PrefissoNome" />
+          <ScalarProperty Name="SuffissoNome" ColumnName="SuffissoNome" />
+          <ScalarProperty Name="Anno" ColumnName="Anno" />
+          <ScalarProperty Name="Versione" ColumnName="Versione" />
+          <ScalarProperty Name="IdEstensione" ColumnName="IdEstensione" />
+          <ScalarProperty Name="IdCostruttore" ColumnName="IdCostruttore" />
+          <ScalarProperty Name="Pdf" ColumnName="Pdf" />
+          <ScalarProperty Name="IdUtenteProprietario" ColumnName="IdUtenteProprietario" />
+          <ScalarProperty Name="DataChiusura" ColumnName="DataChiusura" />
+          <ScalarProperty Name="IdUtenteChiusura" ColumnName="IdUtenteChiusura" />
+          <ScalarProperty Name="DataInserimento" ColumnName="DataInserimento" />
+          <ScalarProperty Name="IdUtenteInserimento" ColumnName="IdUtenteInserimento" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="IdPeriodoFatturazione" ColumnName="IdPeriodoFatturazione" />
+          <ScalarProperty Name="Eliminato" ColumnName="Eliminato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

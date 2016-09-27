@@ -1,0 +1,17 @@
+C:\Works\SWGit\AfterSalesDBEditor\AfterSalesDBEditor\bin\Release\AfterSalesDBEditor.exe.config
+C:\Works\SWGit\AfterSalesDBEditor\AfterSalesDBEditor\bin\Release\AfterSalesDBEditor.exe
+C:\Works\SWGit\AfterSalesDBEditor\AfterSalesDBEditor\bin\Release\AfterSalesDBEditor.pdb
+C:\Works\SWGit\AfterSalesDBEditor\AfterSalesDBEditor\bin\Release\EntityFramework.dll
+C:\Works\SWGit\AfterSalesDBEditor\AfterSalesDBEditor\bin\Release\EntityFramework.SqlServer.dll
+C:\Works\SWGit\AfterSalesDBEditor\AfterSalesDBEditor\bin\Release\EntityFramework.xml
+C:\Works\SWGit\AfterSalesDBEditor\AfterSalesDBEditor\bin\Release\EntityFramework.SqlServer.xml
+C:\Works\SWGit\AfterSalesDBEditor\AfterSalesDBEditor\bin\Release\it\EntityFramework.resources.dll
+C:\Works\SWGit\AfterSalesDBEditor\AfterSalesDBEditor\obj\Release\AfterSalesDBEditor.Form1.resources
+C:\Works\SWGit\AfterSalesDBEditor\AfterSalesDBEditor\obj\Release\AfterSalesDBEditor.Properties.Resources.resources
+C:\Works\SWGit\AfterSalesDBEditor\AfterSalesDBEditor\obj\Release\AfterSalesDBEditor.csproj.GenerateResource.Cache
+C:\Works\SWGit\AfterSalesDBEditor\AfterSalesDBEditor\obj\Release\AfterSalesDBEditor.exe
+C:\Works\SWGit\AfterSalesDBEditor\AfterSalesDBEditor\obj\Release\AfterSalesDBEditor.pdb
+C:\Works\SWGit\AfterSalesDBEditor\AfterSalesDBEditor\bin\Release\AfterSalesDBEditor.exe.manifest
+C:\Works\SWGit\AfterSalesDBEditor\AfterSalesDBEditor\bin\Release\AfterSalesDBEditor.application
+C:\Works\SWGit\AfterSalesDBEditor\AfterSalesDBEditor\obj\Release\AfterSalesDBEditor.exe.manifest
+C:\Works\SWGit\AfterSalesDBEditor\AfterSalesDBEditor\obj\Release\AfterSalesDBEditor.application
